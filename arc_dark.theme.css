@@ -1,0 +1,187 @@
+//META{"name":"Arc Dark","description":"Changes various elements to the KDE theme Arc Dark","author":"Alve#0001","version":"0.13"}*//
+
+/* Smooth out some animations and custom variables */
+* {
+    transition-property: all !important;
+    transition-duration: 100ms !important;
+
+    /* Custom variables */
+    --background-to-primary-card: #282d36;
+    --background-to-primary-card-lighter: #3d434e;
+    --background-primary-muted: #353c49;
+    --background-secondary-muted: #2a2f38;
+    --background-tertiary-muted: #1f232b;
+    --text-link-mention: #7289da1a;
+}
+
+/* Change the dark theme colors */
+.theme-dark {
+    --header-primary: #fff;
+    --header-secondary: #eff0f1;
+    --text-normal: #d3dae3;
+    --text-muted: #8e9197;
+    --text-link: #3daee6;
+    --channels-default: #7c7f85;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #a0becc;
+    --interactive-active: #d3dae3;
+    --interactive-muted: #4f545c;
+    --background-primary: #2f343f;
+    --background-secondary: #242931;
+    --background-tertiary: #1a1e24;
+    --background-accent: #404552;
+    --background-floating: #1c1f25;
+    --background-modifier-hover: #8cc2dd0e;
+    --background-modifier-active: #71b4d61f;
+    --background-modifier-selected: #7dbddd33;
+    --background-modifier-accent: #474d577c;
+    --elevation-low: 0 1px 0 #04040533,0 1.5px 0 #0606070d,0 2px 0 #0404050d;
+    --elevation-high: 0 8px 16px #0000003d;
+    --guild-header-text-shadow: 0 1px 1px #00000066;
+    --channeltextarea-background: #404552;
+    --activity-card-background: #202225;
+    --deprecated-panel-background: #1f242b;
+    --deprecated-card-bg: #24293199;
+    --deprecated-card-editable-bg: #2022254d;
+    --deprecated-store-bg: #2f343f;
+    --deprecated-quickswitcher-input-background: #72767d;
+    --deprecated-quickswitcher-input-placeholder: #ffffff4d;
+    --deprecated-text-input-bg: #0000001a;
+    --deprecated-text-input-border: #0000004d;
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+}
+
+/* Random other styling */
+.da-previewOverlayInner, .da-searchBox, .da-emptyUsers, .bda-slist {
+    background-color: var(--background-to-primary-card) !important;
+}
+
+.da-connectedAccount {
+    background-color: var(--background-to-primary-card);
+}
+
+.da-containerCozy .da-wrapper, .da-invite {
+    background-color: var(--background-to-primary-card) !important;
+    border-color: var(--background-secondary) !important;
+}
+
+.da-wrapper.mention {
+    background-color: var(--text-link-mention) !important;
+}
+
+.da-quickswitcher .da-input {
+    background-color: var(--background-tertiary);
+}
+
+.da-unfollowButton {
+    background-color: var(--background-to-primary-card-lighter) !important;
+}
+
+.da-friendsTable {
+    background-color: var(--background-primary-muted);
+    margin: 0;
+    padding-top: 8px;
+}
+
+.da-headerNormal {
+    background-color: var(--background-tertiary-muted) !important;
+}
+
+.da-body, .da-footer, .da-content.da-systemPad {
+    background-color: var(--background-secondary-muted) !important;
+}
+
+.da-quickMessage {
+    background-color: var(--background-primary-muted) !important;
+    color: var(--text-muted) !important;
+}
+
+.da-quickMessage::placeholder {
+    color: var(--text-muted);
+}
+
+.da-membersWrap {
+    --channels-default: rgb(211, 218, 227);
+}
+
+.da-membersGroup {
+    --channels-default: #7c7f85;
+}
+
+.da-membersWrap .da-activity {
+    --channels-default: #7c7f85;
+}
+
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+    background-color: var(--background-tertiary) !important;
+    border-width: 0px !important;
+}
+
+.da-scroller::-webkit-scrollbar {
+    width: 4px !important;
+}
+
+.da-scroller::-webkit-scrollbar-track-piece {
+    background-color: unset !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.da-messagesWrapper .da-scroller::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.da-backdrop {
+    opacity: .7 !important;
+    
+}
+
+.da-spoilerText.da-hidden {
+    background-color: var(--background-tertiary) !important;
+}
+
+.da-notches {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%2336393f'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E") !important;
+    
+}
+
+.da-progress {
+    background-color: var(--background-secondary) !important;
+}
+
+.da-micTest .da-container {
+    background: linear-gradient(to right, rgb(36, 224, 130), rgb(226, 92, 226)) !important;
+    border-radius: 10px 0 0 10px;
+}
+
+.ui-tab-bar-item.selected {
+    background-color: var(--background-modifier-selected) !important;
+}
+
+.da-autocomplete {
+    background-color: var(--background-secondary-muted) !important;
+}
+
+.da-autocomplete .da-selectorSelected {
+    background-color: var(--background-primary-muted) !important;
+}
+
+.da-attachment, .da-embedInner, .da-header {
+    background-color: var(--background-secondary-muted) !important;
+    border-color: var(--background-secondary) !important;
+}
+
+.da-systemPad .da-message {
+    background-color: var(--background-secondary);
+    border-color: var(--background-tertiary-muted) !important;
+}
+
+.da-uploadModal .da-footer {
+    background-color: unset !important;
+}
+
+.da-inner .da-modal .da-footer {
+    background-color: var(--background-secondary) !important;
+}
