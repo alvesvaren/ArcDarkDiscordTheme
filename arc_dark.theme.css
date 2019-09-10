@@ -1,4 +1,4 @@
-//META{"name":"Arc Dark","description":"Changes various elements to the KDE theme Arc Dark","author":"Alve#0001","version":"0.13"}*//
+//META{"name":"Arc Dark","description":"Changes various elements to the KDE theme Arc Dark","author":"Alve#0001","version":"0.14"}*//
 
 /* Smooth out some animations and custom variables */
 * {
@@ -160,26 +160,34 @@
     background-color: var(--background-modifier-selected) !important;
 }
 
-.da-autocomplete {
+.da-autocomplete, .da-popout .da-scrollerThemed {
     background-color: var(--background-secondary-muted) !important;
 }
 
-.da-autocomplete .da-selectorSelected {
+.da-autocomplete .da-selectorSelected, .da-popout .da-scrollerThemed .da-friendSelected, .da-messagesPopout {
     background-color: var(--background-primary-muted) !important;
 }
 
-.da-attachment, .da-embedInner, .da-header {
+.da-attachment, .da-embedInner, .da-header, .da-messageGroupWrapper {
     background-color: var(--background-secondary-muted) !important;
     border-color: var(--background-secondary) !important;
 }
 
 .da-systemPad .da-message {
-    background-color: var(--background-secondary);
+    background-color: var(--background-secondary) !important;
     border-color: var(--background-tertiary-muted) !important;
 }
 
 .da-uploadModal .da-footer {
     background-color: unset !important;
+}
+
+.da-tabBarContainer, .da-note textarea:focus {
+    background-color: var(--background-secondary) !important;
+}
+
+.da-note {
+    border-radius: 3px;
 }
 
 .da-inner .da-modal .da-footer {
