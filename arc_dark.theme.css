@@ -1,4 +1,4 @@
-//META{"name":"Arc Dark","description":"Changes various elements to the KDE theme Arc Dark","author":"Alve#0001","version":"0.14"}*//
+//META{"name":"Arc Dark","description":"Changes various elements to the KDE theme Arc Dark","author":"Alve#0001","version":"0.15"}*//
 
 /* Smooth out some animations and custom variables */
 * {
@@ -171,6 +171,10 @@
 .da-attachment, .da-embedInner, .da-header, .da-messageGroupWrapper {
     background-color: var(--background-secondary-muted) !important;
     border-color: var(--background-secondary) !important;
+}
+
+.da-header.da-container {
+    background-color: unset !important;
 }
 
 .da-systemPad .da-message {
