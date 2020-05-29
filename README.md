@@ -1,3 +1,8 @@
+## This is an old repo! See [alvesvaren/betterdiscord-things](https://github.com/alvesvaren/betterdiscord-things) instead (you can find this theme there too)
+
+
+
+
 # Arc Dark Discord theme
 
 This is a BetterDiscord port of the color scheme and theme Arc Dark. 
